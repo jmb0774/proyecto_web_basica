@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>La Zaragozana</title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <body>
@@ -13,15 +15,16 @@
     <h2 class="title">Mi cerveza La Zaragozana</h2>
     <p class="subtitle">Aficiones y locuras de un amante de la cerveza</p>
     <nav>
-      <ul class="menu">
+    <button onclick="toggle_visibility('menu');" class="btnmenu">Menu</button>
+      <ul id="menu" class="menu">
         <li class="menuitem">
-          <a href="index.html">Inicio</a>
+          <a class="menulink" href="index.html">Inicio</a>
         </li>
         <li class="menuitem">
-          <a href="cervezas.html">Cervezas</a>
+          <a class="menulink" href="cervezas.html">Cervezas</a>
         </li>
         <li class="menuitem">
-          <a href="contactar.html">Contactar</a>
+          <a class="menulink" href="contactar.html">Contactar</a>
         </li>
       </ul>
     </nav>
